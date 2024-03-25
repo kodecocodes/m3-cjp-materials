@@ -34,6 +34,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -43,6 +44,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Card
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -73,7 +75,7 @@ class MainActivity : ComponentActivity() {
             val state by viewModel.state.observeAsState()
             Column(modifier = Modifier.padding(16.dp)) {
                 state?.forEach { repo ->
-                    Card {
+                    Box {
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
                             modifier = Modifier.padding(16.dp)
@@ -101,7 +103,6 @@ class MainActivity : ComponentActivity() {
                             }
                         }
                     }
-                    Spacer(modifier = Modifier.height(16.dp))
                 }
             }
         }
