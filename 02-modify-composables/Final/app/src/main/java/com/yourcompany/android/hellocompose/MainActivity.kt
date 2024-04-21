@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun HelloCompose(modifier: Modifier = Modifier) {
     Button(modifier = modifier.rotate(30f),
-            onClick = { "Hello Compose!" },
+            onClick = { println("Hello Compose clicked!") },
             content = { Text(text = "Click Me") })
 }
 
