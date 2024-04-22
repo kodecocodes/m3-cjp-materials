@@ -35,7 +35,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
@@ -52,7 +51,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun HelloCompose(modifier: Modifier = Modifier) {
+fun HelloCompose() {
     //TODO Add a button composable
 }
 
