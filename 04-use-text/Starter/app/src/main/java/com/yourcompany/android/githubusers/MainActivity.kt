@@ -72,6 +72,11 @@ class MainActivity : ComponentActivity() {
             Column(modifier = Modifier.padding(16.dp)) {
                 state?.forEach { repo ->
                     Box {
+                        //TODO style the text such that
+                        // 1 repo name is semi-bold
+                        // 2 repo description uses font size of 14sp
+                        // 3 repo link is displayed with a thin font weight and is underlined
+
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
                             modifier = Modifier.padding(16.dp)
@@ -91,8 +96,6 @@ class MainActivity : ComponentActivity() {
                             ) {
                                 Text(
                                     text = repo.name,
-                                    fontSize = 16.sp,
-                                    fontWeight = FontWeight.SemiBold,
                                 )
                                 Spacer(modifier = Modifier.height(8.dp))
                                 repo.description?.let {
