@@ -73,7 +73,7 @@ class MainActivity : ComponentActivity() {
                 state?.forEach { repo ->
                     Box {
                         //TODO style the text such that
-                        // 1 repo name is semi-bold
+                        // 1 repo name is semi-bold and uses a font size of 16sp
                         // 2 repo description uses font size of 14sp
                         // 3 repo link is displayed with a thin font weight and is underlined
 
