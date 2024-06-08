@@ -69,6 +69,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val state by viewModel.state.observeAsState()
+            //TODO extract to component
             Column(modifier = Modifier.padding(16.dp)) {
                 state?.forEach { repo ->
                     Box {
