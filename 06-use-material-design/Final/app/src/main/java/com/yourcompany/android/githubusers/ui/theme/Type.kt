@@ -39,7 +39,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.yourcompany.android.githubusers.R
 
-// Set of Material typography styles to start with
 val rubik = FontFamily(
   Font(R.font.rubik_regular, FontWeight.Normal),
 )
