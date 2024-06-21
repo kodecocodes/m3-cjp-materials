@@ -33,7 +33,7 @@ import com.yourcompany.android.githubusers.ui.theme.GithubUserAppTheme
 
 @Composable
 fun GitHubRepoCard(repo: GitHubRepository) {
-    Card(shape = RoundedCornerShape(16.dp), elevation = 2.dp) {
+    Card(shape = MaterialTheme.shapes.large, elevation = 2.dp) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.padding(16.dp)
